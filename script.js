@@ -1,4 +1,4 @@
-//var root = document.querySelector("#root");
+//var parent = document.querySelector("#parent");
 // const h1 = document.createElement('h1');
 // h1.innerHTML ="Hello !!";
 // root.appendChild(h1);
