@@ -28,25 +28,38 @@ import { useState } from "react";
 
 
 
-const App = () => {
-  const [a, setA] = useState(10)
-  const ChangeA = ()=>{
-    console.log("chalgya")
-    setA(20)
-  }
-  return (
-    <div>
-      <h1>Value of a  is {a}</h1>
-      {/* <button onClick={() => setA(a + 1)}>Change A</button> */} 
-      {/* directly change krne k liye mtlb directly function yhin bna diya  */}
-      <button onClick={ChangeA}>Change A</button>
-    </div>
+// const App = () => {
+//   const [a, setA] = useState(10)
+//   const ChangeA = ()=>{
+//     console.log("chalgya")
+//     setA(20)
+//   }
+//   return (
+//     <div>
+//       <h1>Value of a  is {a}</h1>
+//       {/* <button onClick={() => setA(a + 1)}>Change A</button> */} 
+//       {/* directly change krne k liye mtlb directly function yhin bna diya  */}
+//       <button onClick={ChangeA}>Change A</button>
+//     </div>
     
+//   )
+// }
+// export default App;
+
+
+
+
+
+const App =()=>{
+  const [number, setNumber] = useState(10)
+  return(
+    <div>
+      <h3>Number is{number}</h3>
+      <button onClick={function(){setNumber(number+10)}}> Increment</button>
+      <button onClick={()=> setNumber(number-10)}>Decrement</button>
+    </div>
   )
 }
 export default App;
-
-
-
 
 
