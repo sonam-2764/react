@@ -50,16 +50,33 @@ import { useState } from "react";
 
 
 
-const App =()=>{
-  const [number, setNumber] = useState(10)
-  return(
+// const App =()=>{
+//   const [number, setNumber] = useState(10)
+//   return(
+//     <div>
+//       <h3>Number is{number}</h3>
+//       <button onClick={function(){setNumber(number+10)}}> Increment</button>
+//       <button onClick={()=> setNumber(number-10)}>Decrement</button>
+//     </div>
+//   )
+// }
+// export default App;
+
+
+
+
+const App = ()=>{
+    const submitHandler = ()=>{
+      e.preventDefault()
+    }
+  return (
     <div>
-      <h3>Number is{number}</h3>
-      <button onClick={function(){setNumber(number+10)}}> Increment</button>
-      <button onClick={()=> setNumber(number-10)}>Decrement</button>
-    </div>
+      {/* <form onSubmit={submitHandler}> */}
+      <form onSubmit={(e)=> {
+        submitHandler(e)
+      }}>
+      <input className ='px-4 py-3 text-xl m-5' type = "text" placeholder="Enter your name"/>
+      <button className ='px-4 py-3 m-5 text-xl font-semibold bg-emerland-600'>Submit</button></form></div>
   )
 }
 export default App;
-
-
