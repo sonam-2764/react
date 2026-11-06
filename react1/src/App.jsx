@@ -65,18 +65,68 @@ import { useState } from "react";
 
 
 
-const App = ()=>{
-    const submitHandler = ()=>{
-      e.preventDefault()
-    }
-  return (
-    <div>
-      {/* <form onSubmit={submitHandler}> */}
-      <form onSubmit={(e)=> {
-        submitHandler(e)
-      }}>
-      <input className ='px-4 py-3 text-xl m-5' type = "text" placeholder="Enter your name"/>
-      <button className ='px-4 py-3 m-5 text-xl font-semibold bg-emerland-600'>Submit</button></form></div>
+// const App = ()=>{
+//     const submitHandler = ()=>{
+//       e.preventDefault()
+//     }
+//   return (
+//     <div>
+//       {/* <form onSubmit={submitHandler}> */}
+//       <form onSubmit={(e)=> {
+//         submitHandler(e)
+//       }}>
+//       <input className ='px-4 py-3 text-xl m-5' type = "text" placeholder="Enter your name"/>
+//       <button className ='px-4 py-3 m-5 text-xl font-semibold bg-emerland-600'>Submit</button></form></div>
+//   )
+// }
+// export default App;
+
+
+
+
+
+// //two way winding
+// const App = () => {
+//   const submitHandler = ()=>{
+//        e.preventDefault()
+//        console.log(username)
+//        setUsername('')
+//      }
+//   const [username,setUsername] = useState('')
+//   return(
+//      <div>
+
+//       <form onSubmit={(e)=> {
+//          submitHandler(e)
+//      }}>
+//        <input
+//             value ={username}
+//             onChange ={(e)=>{
+//               setUsername(e.target.value)
+//             }}
+//              className ='px-4 py-3 text-xl m-5' type = "text" placeholder="Enter your name"/>
+//       <button className ='px-4 py-3 m-5 text-xl font-semibold bg-emerland-600'>Submit</button></form></div>
+//   )
+// }
+// export default App;
+
+
+   
+
+
+//fragments are empty tags ...can be used to wrap the contents 
+
+
+
+
+const App =()=> {
+  return(
+    <>
+    <nav>
+      <h2>Youtube</h2>
+      </nav></>
   )
 }
-export default App;
+
+
+

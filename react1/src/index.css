@@ -115,3 +115,7 @@ button{
   background-color: lightseagreen;
   padding: 5px 10px;
 }
+body{
+  background-color: #111;
+  color:#fff;
+}
